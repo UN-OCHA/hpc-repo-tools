@@ -1,6 +1,6 @@
 # HPC Repository Tools
 
-![](https://badgen.net/npm/v/@unocha/hpc-repo-tools)
+[![](https://badgen.net/npm/v/@unocha/hpc-repo-tools)](https://www.npmjs.com/package/@unocha/hpc-repo-tools)
 
 This repo contains tooling and configuration that the HPC Development Team uses
 across our repositories.

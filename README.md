@@ -3,6 +3,35 @@
 This repo contains tooling and configuration that the HPC Development Team uses
 across our repositories.
 
+## Usage
+
+To use this repo, install the NPM package `@unocha/hpc-repo-tools`,
+and configure as follows:
+
+### Eslint
+
+Create a `.eslintrc.json` file with the following contents, 
+ensuring the path to the `tsconfig.json` is correct:
+
+```json
+{
+  "extends": [
+    "./node_modules/@unocha/hpc-repo-tools/eslintrc.base.json"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
+
+### Prettier
+
+Create a `.prettierrc.js` file with the following contents:
+
+```js
+module.exports = require('@unocha/hpc-repo-tools/prettier.config');
+```
+
 ## License
 
 Copyright 2020 United Nations Office for the Coordination of Humanitarian Affairs

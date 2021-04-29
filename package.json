@@ -2,6 +2,7 @@
   "name": "@unocha/hpc-repo-tools",
   "version": "0.0.2",
   "description": "Shared tooling and configuration for the HPC Development Team",
+  "license": "Apache-2.0",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",

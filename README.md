@@ -10,14 +10,12 @@ and configure as follows:
 
 ### Eslint
 
-Create a `.eslintrc.json` file with the following contents, 
+Create a `.eslintrc.json` file with the following contents,
 ensuring the path to the `tsconfig.json` is correct:
 
 ```json
 {
-  "extends": [
-    "./node_modules/@unocha/hpc-repo-tools/eslintrc.base.json"
-  ],
+  "extends": ["./node_modules/@unocha/hpc-repo-tools/eslintrc.base.json"],
   "parserOptions": {
     "project": "./tsconfig.json"
   }

@@ -23,5 +23,9 @@
   "lint-staged": {
     "*.{ts,tsx,d.ts}": "eslint --cache",
     "*.{js,jsx,ts,tsx,md,json}": "prettier --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UN-OCHA/hpc-repo-tools.git"
   }
 }

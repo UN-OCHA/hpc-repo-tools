@@ -32,6 +32,16 @@ Create a `.prettierrc.js` file with the following contents:
 module.exports = require('@unocha/hpc-repo-tools/prettier.config');
 ```
 
+### Commitlint
+
+Create a `.commitlintrc.json` file with the following contents:
+
+```json
+{
+  "extends": ["./node_modules/@unocha/hpc-repo-tools/.commitlintrc.base.json"]
+}
+```
+
 ## License
 
 Copyright 2020 United Nations Office for the Coordination of Humanitarian Affairs

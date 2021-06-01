@@ -18,7 +18,8 @@
       "warn",
       "always",
       {
-        "ignoreConsecutiveComments": true
+        "ignoreConsecutiveComments": true,
+        "ignorePattern": "prettier"
       }
     ]
   },

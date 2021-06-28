@@ -13,6 +13,9 @@
         "checkLoops": false
       }
     ],
+    "curly": "error",
+    "no-else-return": "error",
+    "no-lonely-if": "error",
     "spaced-comment": ["warn", "always"],
     "capitalized-comments": [
       "warn",

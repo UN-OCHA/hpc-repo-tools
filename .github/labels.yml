@@ -1,0 +1,44 @@
+# These labels can be applies using github-label-sync
+# See: https://github.com/Financial-Times/github-label-sync#label-config-file
+- name: blocked
+  color: "990000"
+  description: This PR is blocked on other work
+- name: dependencies
+  color: "0366d6"
+  description: Pull requests that update a dependency file
+- name: deploy to red.dev
+  color: "8f4ee5"
+- name: deploy to blue.dev
+  color: "8f4ee5"
+- name: deployment
+  color: "86e041"
+  description: This PR is associated with a deployment or release
+- name: mergeback
+  color: "aaf99a"
+  description: A PR bringing hotfix changes on a tracking branch into an upstream branch
+- name: needs major changes
+  color: "bf4037"
+  description: There are review or issue comments to address that will result in big changes
+- name: needs minor changes
+  color: "dba841"
+  description: There are review or issue comments to address
+- name: needs rebase
+  color: "bf5737"
+- name: needs testing
+  color: "d3436a"
+- name: needs unit tests
+  color: "dba841"
+- name: pending prior merge
+  color: "d0a0f7"
+  description: Another Pull Request needs to be merged before this one
+- name: ready for review
+  color: "73ef79"
+  description: All comments have been addressed, and the Pull Request is ready for review
+- name: ready for merge
+  color: "73ef79"
+  description: Review and testing is complete. It is ready for merging as soon as CI has finished.
+- name: security
+  color: "d6313c"
+- name: unit tests only
+  color: "d60c5a"
+  description: This Pull Request only affects unit tests (or type definitions)

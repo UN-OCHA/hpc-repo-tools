@@ -52,6 +52,29 @@ the root of this repository:
 npx github-label-sync --labels .github/labels.yml --access-token <token> <owner>/<repo>
 ```
 
+You can setup automatic (daily) syncing in your repository, and allow for a sync
+to be triggered via the GitHub Actions UI with the following workflow:
+
+```yaml
+name: Sync Labels
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '30 16 * * *'
+
+jobs:
+  workflow:
+    name: Run Label Sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Clone UN-OCHA/hpc-repo-tools
+        run: git clone https://github.com/UN-OCHA/hpc-repo-tools.git
+      - name: Run github-label-sync
+        run: npx github-label-sync --labels hpc-repo-tools/.github/labels.yml --access-token ${{ secrets.GITHUB_TOKEN }} $GITHUB_REPOSITORY
+```
+
 ## License
 
 Copyright 2020 United Nations Office for the Coordination of Humanitarian Affairs

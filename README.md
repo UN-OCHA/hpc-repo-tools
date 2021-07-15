@@ -42,6 +42,16 @@ Create a `.commitlintrc.json` file with the following contents:
 }
 ```
 
+### Label Syncing
+
+We share the same label definitions across our repositories,
+they can be synced to a particular repo by running the following command from
+the root of this repository:
+
+```
+npx github-label-sync --labels .github/labels.yml --access-token <token> <owner>/<repo>
+```
+
 ## License
 
 Copyright 2020 United Nations Office for the Coordination of Humanitarian Affairs

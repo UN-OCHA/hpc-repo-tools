@@ -23,7 +23,8 @@
         "ignoreConsecutiveComments": true,
         "ignorePattern": "prettier"
       }
-    ]
+    ],
+    "require-await": "error"
   },
   "overrides": [
     {

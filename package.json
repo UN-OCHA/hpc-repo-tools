@@ -22,8 +22,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{ts,tsx,d.ts}": "eslint --cache",
-    "*.{js,jsx,ts,tsx,md,json}": "prettier --check"
+    "*.{js,jsx,ts,tsx,md,json,yml}": "prettier --check"
   },
   "repository": {
     "type": "git",

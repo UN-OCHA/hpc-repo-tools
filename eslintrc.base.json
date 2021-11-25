@@ -14,6 +14,7 @@
       }
     ],
     "curly": "error",
+    "eqeqeq": "error",
     "no-lonely-if": "error",
     "spaced-comment": ["warn", "always"],
     "capitalized-comments": [

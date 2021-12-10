@@ -4,7 +4,7 @@
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.5.0",
     "eslint-config-prettier": "^8.3.0"
   },

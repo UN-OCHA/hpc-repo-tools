@@ -48,7 +48,12 @@
       "rules": {
         "curly": "error",
         "no-unused-vars": "off",
-        "quotes": ["error", "single", { "avoidEscape": true }],
+        "quotes": "off",
+        "@typescript-eslint/quotes": [
+          "error",
+          "single",
+          { "avoidEscape": true }
+        ],
         "@typescript-eslint/no-unused-vars": [
           "error",
           {

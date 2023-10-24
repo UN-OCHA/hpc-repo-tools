@@ -10,7 +10,7 @@
   },
   "peerDependencies": {
     "typescript": "5.2.2",
-    "eslint": "8.44.0"
+    "eslint": "8.52.0"
   },
   "devDependencies": {
     "husky": "8.0.3",

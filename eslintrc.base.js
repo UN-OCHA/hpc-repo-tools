@@ -4,7 +4,8 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'prettier'],
+  plugins: ['import'],
+  extends: ['eslint:recommended', 'plugin:import/typescript', 'prettier'],
 
   rules: {
     'no-constant-condition': [
@@ -26,6 +27,23 @@ module.exports = {
       },
     ],
     'require-await': 'error',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          ['builtin', 'external'],
+          ['internal', 'parent', 'sibling', 'index'],
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          orderImportKind: 'asc',
+        },
+      },
+    ],
+    'import/no-unresolved': 'error',
   },
   overrides: [
     {
@@ -96,4 +114,13 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: true,
+      node: true,
+    },
+  },
 };

@@ -1,7 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   env: {
-    es6: true,
+    es2024: true,
     node: true,
   },
   extends: ['eslint:recommended', 'prettier'],
@@ -42,13 +42,40 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:unicorn/recommended',
         'prettier',
       ],
-      plugins: ['@typescript-eslint'],
+      plugins: ['@typescript-eslint', 'unicorn'],
       rules: {
+        /**
+         * There is a conflict between ESLint's `array-callback-return` rule
+         * and unicorn plugin `no-useless-undefined` rule
+         *
+         * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md#conflict-with-eslint-array-callback-return-rule
+         */
+        'array-callback-return': ['error', { allowImplicit: true }],
         curly: 'error',
         'no-unused-vars': 'off',
         quotes: 'off',
+        'unicorn/consistent-function-scoping': 'off',
+        'unicorn/expiring-todo-comments': 'off',
+        'unicorn/explicit-length-check': 'off',
+        'unicorn/filename-case': 'off',
+        'unicorn/no-array-reduce': 'off',
+        'unicorn/no-array-callback-reference': 'off',
+        'unicorn/no-await-expression-member': 'off',
+        'unicorn/no-negated-condition': 'off',
+        'unicorn/no-null': 'off',
+        'unicorn/prefer-code-point': 'off',
+        'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],
+        'unicorn/prefer-number-properties': 'off',
+        'unicorn/prefer-string-slice': 'off',
+        'unicorn/prefer-switch': 'off',
+        'unicorn/prefer-ternary': 'off',
+        'unicorn/prefer-top-level-await': 'off',
+        'unicorn/prevent-abbreviations': 'off',
+        'unicorn/switch-case-braces': 'off',
+        'unicorn/text-encoding-identifier-case': 'off',
         '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
         '@typescript-eslint/no-unused-vars': [
           'error',

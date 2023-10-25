@@ -15,7 +15,12 @@ module.exports = {
     ],
     curly: 'error',
     eqeqeq: 'error',
+    'no-else-return': 'error',
     'no-lonely-if': 'error',
+    'no-multi-assign': ['error', { ignoreNonDeclaration: true }],
+    'no-unneeded-ternary': 'error',
+    'no-useless-concat': 'error',
+    'prefer-template': 'error',
     'spaced-comment': ['warn', 'always'],
     'capitalized-comments': [
       'warn',
@@ -76,7 +81,26 @@ module.exports = {
         'unicorn/prevent-abbreviations': 'off',
         'unicorn/switch-case-braces': 'off',
         'unicorn/text-encoding-identifier-case': 'off',
+        // Note: you must disable the base rules, as they can report incorrect errors
+        'no-array-constructor': 'off',
+        quotes: 'off',
+        '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+        '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+        '@typescript-eslint/await-thenable': 'error',
+        '@typescript-eslint/consistent-generic-constructors': 'error',
+        '@typescript-eslint/consistent-type-imports': [
+          'error',
+          { fixStyle: 'inline-type-imports' },
+        ],
+        '@typescript-eslint/prefer-nullish-coalescing': [
+          'error',
+          {
+            ignoreConditionalTests: true,
+            ignoreMixedLogicalExpressions: true,
+          },
+        ],
+        '@typescript-eslint/prefer-optional-chain': 'error',
         '@typescript-eslint/no-unused-vars': [
           'error',
           {

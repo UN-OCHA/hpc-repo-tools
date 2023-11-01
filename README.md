@@ -12,16 +12,18 @@ and configure as follows:
 
 ### Eslint
 
-Create a `.eslintrc.json` file with the following contents,
-ensuring the path to the `tsconfig.json` is correct:
+Create a `.eslintrc.js` file with the following contents:
 
-```json
-{
-  "extends": ["./node_modules/@unocha/hpc-repo-tools/eslintrc.base.json"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
-}
+```js
+const baseConfig = require('@unocha/hpc-repo-tools/eslintrc.base');
+
+module.exports = {
+  ...baseConfig,
+  parserOptions: {
+    project: true,
+    tsconfigRootDir: __dirname,
+  },
+};
 ```
 
 ### Prettier

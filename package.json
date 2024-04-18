@@ -4,15 +4,15 @@
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.7.1",
-    "@typescript-eslint/parser": "7.7.1",
+    "@typescript-eslint/eslint-plugin": "8.0.0-alpha.13",
+    "@typescript-eslint/parser": "8.0.0-alpha.13",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-unicorn": "52.0.0",
     "prettier-plugin-organize-imports": "3.2.4"
   },
   "peerDependencies": {
     "typescript": "5.4.5",
-    "eslint": "8.57.0"
+    "eslint": "9.2.0"
   },
   "devDependencies": {
     "husky": "9.0.11",

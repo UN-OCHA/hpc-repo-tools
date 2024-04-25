@@ -62,6 +62,7 @@ module.exports = {
         curly: 'error',
         'no-unused-vars': 'off',
         quotes: 'off',
+        'unicorn/consistent-destructuring': 'error',
         'unicorn/consistent-function-scoping': 'off',
         'unicorn/expiring-todo-comments': 'off',
         'unicorn/explicit-length-check': 'off',

@@ -65,7 +65,6 @@ module.exports = tseslint.config(
        * https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md#conflict-with-eslint-array-callback-return-rule
        */
       'array-callback-return': ['error', { allowImplicit: true }],
-      curly: 'error',
       'no-unused-vars': 'off',
       quotes: 'off',
       'unicorn/consistent-destructuring': 'error',

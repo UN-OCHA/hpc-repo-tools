@@ -88,7 +88,6 @@ module.exports = tseslint.config(
       // Note: you must disable the base rules, as they can report incorrect errors
       'no-array-constructor': 'off',
       '@typescript-eslint/no-array-constructor': 'error',
-      '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
       '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/consistent-generic-constructors': 'error',

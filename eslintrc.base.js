@@ -33,7 +33,6 @@ module.exports = tseslint.config(
       'no-unneeded-ternary': 'error',
       'no-useless-concat': 'error',
       'prefer-template': 'error',
-      'spaced-comment': ['warn', 'always'],
       'capitalized-comments': [
         'warn',
         'always',
@@ -66,7 +65,6 @@ module.exports = tseslint.config(
        */
       'array-callback-return': ['error', { allowImplicit: true }],
       'no-unused-vars': 'off',
-      quotes: 'off',
       'unicorn/consistent-destructuring': 'error',
       'unicorn/consistent-function-scoping': 'off',
       'unicorn/expiring-todo-comments': 'off',
@@ -89,7 +87,6 @@ module.exports = tseslint.config(
       'unicorn/text-encoding-identifier-case': 'off',
       // Note: you must disable the base rules, as they can report incorrect errors
       'no-array-constructor': 'off',
-      quotes: 'off',
       '@typescript-eslint/no-array-constructor': 'error',
       '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
       '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],

@@ -74,6 +74,7 @@ module.exports = tseslint.config(
       'unicorn/no-array-callback-reference': 'off',
       'unicorn/no-await-expression-member': 'off',
       'unicorn/no-negated-condition': 'off',
+      'unicorn/no-nested-ternary': 'off',
       'unicorn/no-null': 'off',
       'unicorn/prefer-code-point': 'off',
       'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],

@@ -116,6 +116,7 @@ module.exports = tseslint.config(
       '@typescript-eslint/no-var-requires': 'warn',
       '@typescript-eslint/no-namespace': 'warn',
       '@typescript-eslint/no-empty-object-type': 'warn',
+      '@typescript-eslint/no-non-null-assertion': 'error',
       '@typescript-eslint/naming-convention': [
         'error',
         {

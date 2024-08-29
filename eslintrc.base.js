@@ -76,6 +76,7 @@ module.exports = tseslint.config(
       'unicorn/no-negated-condition': 'off',
       'unicorn/no-nested-ternary': 'off',
       'unicorn/no-null': 'off',
+      'unicorn/number-literal-case': 'off',
       'unicorn/prefer-code-point': 'off',
       'unicorn/prefer-export-from': ['error', { ignoreUsedVariables: true }],
       'unicorn/prefer-number-properties': 'off',

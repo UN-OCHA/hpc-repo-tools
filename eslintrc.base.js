@@ -113,7 +113,7 @@ module.exports = tseslint.config(
       '@typescript-eslint/no-inferrable-types': 'off',
       '@typescript-eslint/no-var-requires': 'warn',
       '@typescript-eslint/no-namespace': 'warn',
-      '@typescript-eslint/ban-types': 'warn',
+      '@typescript-eslint/no-empty-object-type': 'warn',
       '@typescript-eslint/naming-convention': [
         'error',
         {

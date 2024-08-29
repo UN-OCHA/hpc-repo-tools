@@ -17,7 +17,7 @@
   "devDependencies": {
     "husky": "9.1.5",
     "lint-staged": "15.2.9",
-    "prettier": "3.2.5"
+    "prettier": "3.3.3"
   },
   "engines": {
     "node": ">=18.20.2 || >=20.12.2",

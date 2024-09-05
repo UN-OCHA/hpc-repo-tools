@@ -1,30 +1,31 @@
 {
   "name": "@unocha/hpc-repo-tools",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.7.1",
-    "@typescript-eslint/parser": "7.7.1",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-unicorn": "52.0.0",
-    "prettier-plugin-organize-imports": "3.2.4"
+    "eslint-plugin-unicorn": "55.0.0",
+    "globals": "15.9.0",
+    "prettier-plugin-organize-imports": "4.0.0",
+    "typescript-eslint": "8.3.0"
   },
   "peerDependencies": {
     "typescript": "5.5.4",
-    "eslint": "8.57.0"
+    "eslint": "9.9.1"
   },
   "devDependencies": {
-    "husky": "9.0.11",
-    "lint-staged": "15.2.2",
-    "prettier": "3.2.5"
+    "husky": "9.1.5",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3"
   },
   "engines": {
-    "node": ">=18.20.2 || >=20.12.2",
-    "npm": ">=9.6.5 || >=10.5.0"
+    "node": ">=20.15.1",
+    "npm": ">=9.6.5 || >=10.7.0"
   },
   "scripts": {
     "prepare": "husky",
+    "reinstall": "rm -rf node_modules && npm install",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {

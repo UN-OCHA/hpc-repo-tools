@@ -12,3 +12,11 @@ updates:
     open-pull-requests-limit: 10
     reviewers:
       - '@UN-OCHA/hpc-js-reviewers'
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+      time: '11:00'
+      timezone: 'Europe/Zurich'
+    reviewers:
+      - '@UN-OCHA/hpc-js-reviewers'

@@ -1,6 +1,6 @@
 {
   "name": "@unocha/hpc-repo-tools",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "dependencies": {
@@ -8,11 +8,11 @@
     "eslint-plugin-unicorn": "56.0.1",
     "globals": "15.14.0",
     "prettier-plugin-organize-imports": "4.1.0",
-    "typescript-eslint": "8.22.0"
+    "typescript-eslint": "8.23.0"
   },
   "peerDependencies": {
-    "typescript": "5.7.2",
-    "eslint": "9.16.0"
+    "typescript": "5.7.3",
+    "eslint": "9.19.0"
   },
   "devDependencies": {
     "husky": "9.1.7",

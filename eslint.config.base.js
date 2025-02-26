@@ -16,7 +16,7 @@ module.exports = tseslint.config(
   },
   eslint.configs.recommended,
   eslintConfigPrettier,
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   {
     rules: {
       'no-constant-condition': [

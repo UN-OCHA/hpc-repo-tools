@@ -4,7 +4,7 @@
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "eslint-config-prettier": "10.0.1",
+    "eslint-config-prettier": "10.0.2",
     "eslint-plugin-unicorn": "56.0.1",
     "globals": "15.14.0",
     "prettier-plugin-organize-imports": "4.1.0",

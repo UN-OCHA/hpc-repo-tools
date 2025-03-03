@@ -30,7 +30,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,json,yml}": "prettier --config prettier.config.base.js --check"
+    "*.{js,cjs,mjs,ts,md,json,yml}": "prettier --config prettier.config.base.js --check"
   },
   "repository": {
     "type": "git",

@@ -12,36 +12,34 @@ and configure as follows:
 
 ### Eslint
 
-Create a `.eslintrc.js` file with the following contents:
+Create a `eslint.config.mjs` file with the following contents:
 
 ```js
-const baseConfig = require('@unocha/hpc-repo-tools/eslintrc.base');
+import baseConfig from '@unocha/hpc-repo-tools/eslint.config.base.js';
 
-module.exports = {
+export default {
   ...baseConfig,
   parserOptions: {
     project: true,
-    tsconfigRootDir: __dirname,
+    tsconfigRootDir: import.meta.dirname,
   },
 };
 ```
 
 ### Prettier
 
-Create a `.prettierrc.js` file with the following contents:
+Create a `prettier.config.mjs` file with the following contents:
 
 ```js
-module.exports = require('@unocha/hpc-repo-tools/prettier.config');
+export { default } from '@unocha/hpc-repo-tools/prettier.config.base.js';
 ```
 
 ### Commitlint
 
-Create a `.commitlintrc.json` file with the following contents:
+Create a `commitlint.config.mjs` file with the following contents:
 
-```json
-{
-  "extends": ["./node_modules/@unocha/hpc-repo-tools/.commitlintrc.base.json"]
-}
+```js
+export { default } from '@unocha/hpc-repo-tools/commitlint.config.base.js';
 ```
 
 ### Label Syncing

@@ -1,10 +1,10 @@
-const globals = require('globals');
-const eslint = require('@eslint/js');
-const eslintConfigPrettier = require('eslint-config-prettier');
-const eslintPluginUnicorn = require('eslint-plugin-unicorn');
-const tseslint = require('typescript-eslint');
+import eslint from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
-module.exports = tseslint.config(
+export default tseslint.config(
   {
     languageOptions: {
       ecmaVersion: 2024,

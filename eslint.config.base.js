@@ -55,9 +55,9 @@ export default tseslint.config(
   },
   {
     files: ['**/*.{ts,tsx}'],
-    ...eslintPluginUnicorn.configs['flat/recommended'],
+    ...eslintPluginUnicorn.configs['recommended'],
     rules: {
-      ...eslintPluginUnicorn.configs['flat/recommended'].rules,
+      ...eslintPluginUnicorn.configs['recommended'].rules,
       /**
        * There is a conflict between ESLint's `array-callback-return` rule
        * and unicorn plugin `no-useless-undefined` rule

@@ -11,7 +11,7 @@
     "globals": "16.0.0",
     "prettier-plugin-organize-imports": "4.1.0",
     "prettier-plugin-sh": "^0.15.0",
-    "typescript-eslint": "8.26.0"
+    "typescript-eslint": "8.26.1"
   },
   "peerDependencies": {
     "eslint": "9.21.0",

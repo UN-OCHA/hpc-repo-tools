@@ -1,6 +1,8 @@
 export default {
   singleQuote: true,
   trailingComma: 'es5',
+  htmlWhitespaceSensitivity: 'ignore',
+  bracketSameLine: true,
   plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-sh'],
   organizeImportsSkipDestructiveCodeActions: true,
   overrides: [

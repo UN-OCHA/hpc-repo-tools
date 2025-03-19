@@ -1,10 +1,12 @@
 export default {
   singleQuote: true,
   trailingComma: 'es5',
-  plugins: [
-    '@prettier/plugin-xml',
-    'prettier-plugin-organize-imports',
-    'prettier-plugin-sh',
-  ],
+  htmlWhitespaceSensitivity: 'ignore',
+  bracketSameLine: true,
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-sh'],
   organizeImportsSkipDestructiveCodeActions: true,
+  overrides: [
+    { files: ['*.svg'], options: { parser: 'html' } },
+    { files: ['*.xml'], options: { parser: 'html' } },
+  ],
 };

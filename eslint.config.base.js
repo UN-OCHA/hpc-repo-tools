@@ -135,7 +135,7 @@ export default tseslint.config(
           selector: 'variable',
           types: ['boolean'],
           format: ['PascalCase'],
-          prefix: ['is', 'should', 'has', 'can', 'did', 'does', 'will'],
+          prefix: ['is', 'are', 'should', 'has', 'can', 'did', 'does', 'will'],
         },
         {
           selector: 'parameter',

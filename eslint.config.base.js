@@ -42,6 +42,7 @@ export default tseslint.config(
         },
       ],
       'require-await': 'error',
+      'object-shorthand': ['error', 'properties'],
     },
   },
   {

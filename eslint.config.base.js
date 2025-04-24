@@ -42,10 +42,11 @@ export default tseslint.config(
         },
       ],
       'require-await': 'error',
+      'object-shorthand': ['error', 'properties'],
     },
   },
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,cjs,mjs,jsx}'],
     rules: {
       'no-bitwise': 'error',
       'no-case-declarations': 'off',

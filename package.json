@@ -1,6 +1,6 @@
 {
   "name": "@unocha/hpc-repo-tools",
-  "version": "6.4.0",
+  "version": "7.0.0",
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "type": "module",
@@ -22,8 +22,8 @@
     "prettier": "3.5.3"
   },
   "engines": {
-    "node": ">=20.15.1",
-    "npm": ">=9.6.5 || >=10.7.0"
+    "node": ">=20.19.0 || >=22.14.0",
+    "npm": ">=9.6.5 || >=10.9.0 || >=11.3.0"
   },
   "scripts": {
     "prepare": "husky",

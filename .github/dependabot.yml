@@ -1,5 +1,5 @@
 # Documentation for all configuration options:
-# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
 
 version: 2
 updates:
@@ -11,13 +11,9 @@ updates:
       timezone: 'Europe/Zurich'
     open-pull-requests-limit: 10
     versioning-strategy: increase
-    reviewers:
-      - '@UN-OCHA/hpc-js-reviewers'
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
       interval: 'monthly'
       time: '11:00'
       timezone: 'Europe/Zurich'
-    reviewers:
-      - '@UN-OCHA/hpc-js-reviewers'

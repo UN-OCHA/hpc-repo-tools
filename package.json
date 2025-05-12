@@ -1,6 +1,6 @@
 {
   "name": "@unocha/hpc-repo-tools",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "type": "module",
@@ -13,8 +13,8 @@
     "typescript-eslint": "8.32.0"
   },
   "peerDependencies": {
-    "eslint": "9.23.0",
-    "typescript": "5.8.2"
+    "eslint": "^9.26.0",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "husky": "9.1.7",

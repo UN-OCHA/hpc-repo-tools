@@ -1,6 +1,6 @@
 {
   "name": "@unocha/hpc-repo-tools",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "description": "Shared tooling and configuration for the HPC Development Team",
   "license": "Apache-2.0",
   "type": "module",

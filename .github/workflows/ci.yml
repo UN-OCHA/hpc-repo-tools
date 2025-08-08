@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: '22'
       - name: Install packages
-        run: npm ci
+        run: npm i
+      - name: Check lockfile is up-to-date
+        run: git diff --exit-code package-lock.json
       - name: Check formatting
         run: npx prettier --config prettier.config.base.js --check .

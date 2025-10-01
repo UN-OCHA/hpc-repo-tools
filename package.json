@@ -6,7 +6,7 @@
   "type": "module",
   "dependencies": {
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-unicorn": "60.0.0",
+    "eslint-plugin-unicorn": "61.0.2",
     "globals": "16.3.0",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier-plugin-sh": "0.18.0",
